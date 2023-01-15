@@ -1,6 +1,7 @@
 import 'package:dev_post/src/core/screens/error_screen.dart';
 import 'package:dev_post/src/core/screens/loading_screen.dart';
 import 'package:dev_post/src/core/screens/unknown_screen.dart';
+import 'package:dev_post/src/core/theme/colors_guide.dart';
 import 'package:dev_post/src/features/homepage/presentation/components/home_page_body.dart';
 import 'package:dev_post/src/features/homepage/presentation/providers/post_provider.dart';
 import 'package:flutter/material.dart';
@@ -14,7 +15,7 @@ class HomePage extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     return Scaffold(
-      backgroundColor: const Color(0xFFF3F3F3),
+      backgroundColor: ColorsGuide.backgroundColor,
       body: ref.watch(_postsListProvider).maybeWhen(
             success: (content) {
               return HomePageBody(post: content);

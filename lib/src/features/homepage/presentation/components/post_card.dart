@@ -1,4 +1,5 @@
 import 'package:dev_post/src/core/extensions/extensions.dart';
+import 'package:dev_post/src/core/theme/colors_guide.dart';
 import 'package:dev_post/src/core/widgets/nothing.dart';
 import 'package:dev_post/src/features/homepage/presentation/components/post_card_content.dart';
 import 'package:flutter/material.dart';
@@ -38,10 +39,10 @@ class PostCard extends StatelessWidget {
       height: height,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(borderRadius),
-        color: Colors.white,
+        color: ColorsGuide.cardColor,
         boxShadow: [
           BoxShadow(
-            color: Colors.grey.withOpacity(0.5),
+            color: ColorsGuide.labelColor.withOpacity(0.5),
             spreadRadius: 5,
             blurRadius: 7,
             offset: const Offset(0, 3),
