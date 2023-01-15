@@ -1,5 +1,6 @@
 import 'package:dev_post/src/core/constants/interface.dart';
 import 'package:dev_post/src/core/extensions/extensions.dart';
+import 'package:dev_post/src/core/theme/typography.dart';
 import 'package:flutter/material.dart';
 
 class NavigationPanel extends StatelessWidget {
@@ -13,12 +14,12 @@ class NavigationPanel extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Row(
-            children: const [
+            children: [
               Text(
                 Interface.title,
-                style: TextStyle(fontSize: 20, color: Colors.black),
+                style: TextStyles.title,
               ),
-              Icon(
+              const Icon(
                 Icons.flutter_dash,
                 size: 20,
               ),

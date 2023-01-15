@@ -37,3 +37,8 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+
+  fonts:
+    - family: Ubuntu-Regular
+      fonts:
+        - asset: lib/src/assets/font/Ubuntu-Regular.ttf

@@ -1,4 +1,6 @@
 import 'package:dev_post/src/core/extensions/extensions.dart';
+import 'package:dev_post/src/core/theme/colors_guide.dart';
+import 'package:dev_post/src/core/theme/typography.dart';
 import 'package:dev_post/src/core/utils/utils.dart';
 import 'package:dev_post/src/core/widgets/gap_w.dart';
 import 'package:dev_post/src/core/widgets/nothing.dart';
@@ -29,7 +31,12 @@ class PostList extends StatelessWidget {
                     imageContent,
                   )
                 : null,
-            title: titleContent != null ? Text(titleContent) : const Nothing(),
+            title: titleContent != null
+                ? Text(
+                    titleContent,
+                    style: TextStyles.body,
+                  )
+                : const Nothing(),
             description: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -43,27 +50,27 @@ class PostList extends StatelessWidget {
                     authorName != null
                         ? Text(
                             authorName,
+                            style: TextStyles.body,
                             maxLines: 1,
                           )
                         : const Nothing(),
                     const GapW(
                       param: 2,
                     ),
-                    const Icon(
-                      Icons.favorite,
-                      color: Colors.red,
-                    ),
+                    Icon(Icons.favorite, color: ColorsGuide.ligntColor),
                     const GapW(
                       param: 1,
                     ),
                     Text(
                       '$upsContent',
+                      style: TextStyles.smallBody,
                     ),
                   ],
                 ),
                 createdDate != null
                     ? Text(
                         Utils.toDateTime(createdDate),
+                        style: TextStyles.smallBody,
                       )
                     : const Nothing()
               ],

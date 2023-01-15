@@ -1,12 +1,11 @@
 import 'dart:math' as math;
 
+import 'package:dev_post/src/core/theme/colors_guide.dart';
 import 'package:dev_post/src/features/homepage/presentation/components/navigation_panel.dart';
 import 'package:flutter/material.dart';
 
 class CustomAppBar extends StatelessWidget {
   const CustomAppBar({Key? key}) : super(key: key);
-
-  final Color _accentColor = const Color(0xFF00FF83);
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +17,7 @@ class CustomAppBar extends StatelessWidget {
         return Future<void>.value();
       },
       expandedHeight: 200.0,
-      backgroundColor: const Color(0xFFF3F3F3),
+      backgroundColor: ColorsGuide.backgroundColor,
       flexibleSpace: FlexibleSpaceBar(
         stretchModes: const <StretchMode>[
           StretchMode.zoomBackground,
@@ -36,7 +35,7 @@ class CustomAppBar extends StatelessWidget {
                   bottomRight: Radius.circular(50.0),
                 ),
                 gradient: LinearGradient(
-                  colors: [_accentColor, Colors.blue],
+                  colors: [ColorsGuide.appBarColor, ColorsGuide.primaryColor],
                   begin: const Alignment(-1.0, 0.0),
                   end: const Alignment(1.0, 0.0),
                   transform: const GradientRotation(math.pi / 4),
