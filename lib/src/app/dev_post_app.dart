@@ -1,4 +1,5 @@
 import 'package:dev_post/src/core/dimensions/adaptive_widget.dart';
+import 'package:dev_post/src/features/homepage/presentation/pages/home_page.dart';
 import 'package:flutter/material.dart';
 
 class DevPostApp extends StatelessWidget {
@@ -10,7 +11,7 @@ class DevPostApp extends StatelessWidget {
       builder: (context, orientation) {
         return MaterialApp(
           debugShowCheckedModeBanner: false,
-          home: Container(),
+          home: HomePage(),
         );
       },
     );
