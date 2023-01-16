@@ -20,6 +20,12 @@ api link ->  [https://www.reddit.com/r/flutterdev/new.json](https://www.reddit.c
 <img src="https://github.com/olndl/dev_post/blob/dev/screenshots/first_screen.png" width="200" height="400"/>
 <img src="https://github.com/olndl/dev_post/blob/dev/screenshots/second_screen.png" width="200" height="400"/>
 </p>
+
+## Get Started
+Generate file *.g.dart and *.freezed.dart, you can use this command on terminal :
+
+`flutter pub run build_runner build --delete-conflicting-outputs`
+
 ## Packages Used
 
 - `flutter_riverpod` for state management.
