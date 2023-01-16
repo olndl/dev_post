@@ -13,12 +13,13 @@ api link ->  [https://www.reddit.com/r/flutterdev/new.json](https://www.reddit.c
 
 
 ## Video
-<img src="https://github.com/olndl/dev_post/blob/dev/screenshots/screen.gif" width="300"/>
+<img src="https://github.com/olndl/dev_post/blob/dev/screenshots/screen.gif" width="200" height="400"/>
 
 ## Screenshots
-<img src="https://github.com/olndl/dev_post/blob/dev/screenshots/first_screen.png" width="350"/>
-<img src="https://github.com/olndl/dev_post/blob/dev/screenshots/second_screen.png" width="350/>
-
+<p float="left">
+<img src="https://github.com/olndl/dev_post/blob/dev/screenshots/first_screen.png" width="200" height="400"/>
+<img src="https://github.com/olndl/dev_post/blob/dev/screenshots/second_screen.png" width="200" height="400"/>
+</p>
 ## Packages Used
 
 - `flutter_riverpod` for state management.
