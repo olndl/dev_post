@@ -17,7 +17,7 @@ api link ->  [https://www.reddit.com/r/flutterdev/new.json](https://www.reddit.c
 
 
 ## Video
-<h1><img src="https://github.com/olndl/dev_post/blob/main/screenshots/screen.gif"/></h1>
+<img src="https://github.com/olndl/dev_post/blob/main/screenshots/screen.gif"/>
 
 ## Packages Used
 
