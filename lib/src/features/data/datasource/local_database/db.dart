@@ -5,7 +5,7 @@ import 'package:path_provider/path_provider.dart';
 import 'package:sqflite/sqflite.dart';
 
 class DB {
-  static const databaseVersion = 1;
+  static const databaseVersion = 2;
   // static const columnAutoId = 'id_auto';
   static const columnId = 'id';
   static const columnselfText = 'selftext';

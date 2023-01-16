@@ -24,7 +24,7 @@ class Mapper {
         ups: entity['ups'],
         thumbnail: entity['thumbnail'],
         author: entity['author'],
-        createdUtc: double.parse(entity['created_utc']),
+        createdUtc: entity['created_utc'].toDouble(),
       ),
     );
   }
