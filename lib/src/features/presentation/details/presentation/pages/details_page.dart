@@ -21,7 +21,7 @@ class DetailsPage extends StatelessWidget {
         slivers: [
           const CustomAppBar(bar: DetailsPanel()),
           SliverPadding(
-            padding: EdgeInsets.only(top: 1.percentOfHeight),
+            padding: EdgeInsets.only(top: 3.percentOfHeight),
           ),
           PostInfoCard(
             postData: tappedPost,

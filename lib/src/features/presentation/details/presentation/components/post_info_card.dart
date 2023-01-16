@@ -22,7 +22,7 @@ class PostInfoCard extends StatelessWidget {
           children: <Widget>[
             CustomCard(
               width: 90.percentOfWidth,
-              height: 20.percentOfHeight,
+              height: 25.percentOfHeight,
               child: Padding(
                 padding: EdgeInsets.symmetric(
                   horizontal: 3.percentOfWidth,
@@ -44,7 +44,7 @@ class PostInfoCard extends StatelessWidget {
               ),
             ),
             Positioned(
-              top: 10,
+              top: 1.percentOfHeight,
               child: FractionalTranslation(
                 translation: const Offset(0.0, -0.4),
                 child: Align(
