@@ -1,3 +1,4 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:dev_post/src/core/widgets/custom_card.dart';
 import 'package:dev_post/src/core/widgets/nothing.dart';
 import 'package:dev_post/src/features/presentation/homepage/presentation/components/post_card_content.dart';
@@ -22,7 +23,7 @@ class PostCard extends StatelessWidget {
   final double? heightImage;
   final double borderRadius;
   final EdgeInsetsGeometry? contentPadding;
-  final ImageProvider? image;
+  final String? image;
   final Color color;
   final Widget? title;
   final Widget? description;
@@ -42,11 +43,18 @@ class PostCard extends StatelessWidget {
                     topLeft: Radius.circular(borderRadius),
                     topRight: Radius.circular(borderRadius),
                   ),
-                  child: Image(
-                    image: image!,
+                  child: CachedNetworkImage(
+                    imageUrl: image!,
+                    fit: BoxFit.cover,
                     width: width,
                     height: heightImage,
-                    fit: BoxFit.cover,
+                    progressIndicatorBuilder:
+                        (context, url, downloadProgress) =>
+                            CircularProgressIndicator(
+                      value: downloadProgress.progress,
+                    ),
+                    errorWidget: (context, url, error) =>
+                        const Icon(Icons.error),
                   ),
                 )
               : const Nothing(),

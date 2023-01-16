@@ -9,7 +9,7 @@ import 'package:dev_post/src/features/presentation/homepage/presentation/compone
 import 'package:flutter/material.dart';
 
 class DetailsPage extends StatelessWidget {
-  final ChildData? tappedPost;
+  final ChildData tappedPost;
   const DetailsPage({Key? key, required this.tappedPost}) : super(key: key);
 
   @override
@@ -27,13 +27,13 @@ class DetailsPage extends StatelessWidget {
             postData: tappedPost,
           ),
           PostScoresCard(
-            author: tappedPost?.author,
-            ups: tappedPost?.ups,
-            date: tappedPost?.createdUtc.round(),
+            author: tappedPost.author,
+            ups: tappedPost.ups,
+            date: tappedPost.createdUtc.round(),
           ),
-          if (tappedPost?.selftext != null && tappedPost?.selftext != '')
+          if (tappedPost.selftext != null && tappedPost.selftext != '')
             PostTextCard(
-              selfText: tappedPost?.selftext,
+              selfText: tappedPost.selftext,
             ),
         ],
       ),

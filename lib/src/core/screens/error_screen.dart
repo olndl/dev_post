@@ -1,3 +1,4 @@
+import 'package:dev_post/src/core/errors/logger.dart';
 import 'package:flutter/material.dart';
 
 class ErrorScreen extends StatelessWidget {
@@ -6,6 +7,7 @@ class ErrorScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    logger.info(message);
     return Center(
       heightFactor: 30,
       child: Column(

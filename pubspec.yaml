@@ -23,6 +23,9 @@ dependencies:
   intl: ^0.17.0
   # state management
   flutter_riverpod: ^1.0.4
+  path_provider: ^2.0.11
+  sqflite: ^2.0.3+1
+  cached_network_image: ^3.2.3
 
 
 dev_dependencies:

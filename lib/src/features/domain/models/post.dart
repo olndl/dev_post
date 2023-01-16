@@ -10,7 +10,7 @@ String postToJson(Post? data) => json.encode(data!.toJson());
 @freezed
 class Post with _$Post {
   const factory Post({
-    required PostData? data,
+    required PostData data,
   }) = _Post;
 
   factory Post.fromJson(Map<String, dynamic> json) => _$PostFromJson(json);
@@ -20,7 +20,7 @@ class Post with _$Post {
 class PostData with _$PostData {
   const factory PostData({
     required int? dist,
-    required List<Child?>? children,
+    required List<Child> children,
   }) = _PostData;
 
   factory PostData.fromJson(Map<String, dynamic> json) =>
@@ -30,7 +30,7 @@ class PostData with _$PostData {
 @freezed
 class Child with _$Child {
   const factory Child({
-    required ChildData? data,
+    required ChildData data,
   }) = _Child;
 
   factory Child.fromJson(Map<String, dynamic> json) => _$ChildFromJson(json);
@@ -39,11 +39,12 @@ class Child with _$Child {
 @freezed
 class ChildData with _$ChildData {
   const factory ChildData({
+    required String id,
     required String? selftext,
-    required String? title,
-    required int? ups,
+    required String title,
+    required int ups,
     required String? thumbnail,
-    required String? author,
+    required String author,
     @JsonKey(name: 'created_utc') required double createdUtc,
   }) = _ChildData;
 

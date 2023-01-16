@@ -28,5 +28,5 @@ class ListPostSegment with TypedSegment {}
 class PostDetailsSegment with TypedSegment {
   PostDetailsSegment({required this.post});
 
-  final ChildData? post;
+  final ChildData post;
 }
