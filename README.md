@@ -1,16 +1,29 @@
-# dev_post
+# FlutterDevPost App
+Flutter app that fetches posts about flutter development from reddit
+api link ->  [https://www.reddit.com/r/flutterdev/new.json](https://www.reddit.com/r/flutterdev/new.json).
+## Features
+#### Basic
+- [x] Screens: post list, post detals screen
+- [x] Work with backend is implemented, data is received from the server
+- [X] State-management and DI implemented using `flutter_riverpod`
+- [x] App icon added
+- [X] Implemented Navigation
+- [x] Organized saving data to disk using a SQFLite
+- [X] Offline-first mood
 
-A new Flutter project.
+## Screenshots
+<img src="https://github.com/olndl/dev_post/blob/dev/screenshots/first_screen.png" width="350"/>
+<img src="https://github.com/olndl/dev_post/blob/dev/screenshots/second_screen.png" width="350/>
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
+## Video
+<h1><img src="https://github.com/olndl/dev_post/blob/dev/screenshots/screen.gif"/></h1>
 
-A few resources to get you started if this is your first Flutter project:
+## Packages Used
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- `flutter_riverpod` for state management.
+- `dio` to work with Http client.
+- `freezed` - code generator for data-classes
+- `sqflite` and `path_provider` to support local storage.
+- `linter` - for code rules.
+- more at `pubspec.yaml`
