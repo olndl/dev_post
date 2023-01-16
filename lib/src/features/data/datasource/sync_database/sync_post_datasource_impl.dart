@@ -24,7 +24,7 @@ class SyncPostDatabaseImpl extends PostDataSource {
       for (int i = 0; i < currantRemotePosts.length; i++) {
         await localPosts.savePost(currantRemotePosts[i].data);
       }
-      return currantLocalPosts;
+      return currantRemotePosts;
     } else if (isOnline) {
       currantRemotePosts = await remotePosts.getPosts();
       await mergeLists(currantLocalPosts, currantRemotePosts);

@@ -1,6 +1,5 @@
 import 'package:dev_post/src/core/api/dio_consumer.dart';
 import 'package:dev_post/src/core/constants/database.dart';
-import 'package:dev_post/src/core/errors/logger.dart';
 import 'package:dev_post/src/core/mappers/mapper.dart';
 import 'package:dev_post/src/features/data/datasource/local_database/db.dart';
 import 'package:dev_post/src/features/data/datasource/post_datasource.dart';
@@ -24,9 +23,7 @@ class LocalPostDatasourceImpl implements PostDataSource {
   }
 
   Future<void> savePost(ChildData post) async {
-    logger.info('HELLO');
     final Database database = await databaseFuture;
-    late final ChildData postEntity;
     await database.transaction(
       (txn) async {
         final id = await txn.insert(
@@ -34,12 +31,11 @@ class LocalPostDatasourceImpl implements PostDataSource {
           post.toJson(),
           conflictAlgorithm: ConflictAlgorithm.replace,
         );
-        final results = await txn.query(
+        await txn.query(
           DataBase.databaseName,
           where: '${DB.columnId} = ?',
           whereArgs: [id],
         );
-        postEntity = Mapper().transformToModel(results.first);
       },
     );
   }

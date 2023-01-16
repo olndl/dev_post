@@ -24,7 +24,6 @@ class HomePageBody extends ConsumerWidget {
       child: CustomScrollView(
         physics: const BouncingScrollPhysics(),
         slivers: [
-          //const CupertinoSliverRefreshControl(),
           const CustomAppBar(
             bar: NavigationPanel(),
           ),
