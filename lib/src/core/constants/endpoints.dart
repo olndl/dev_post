@@ -5,4 +5,5 @@ class Endpoints {
   static const String noImageUrl =
       'https://storage.googleapis.com/cms-storage-bucket/d406c736e7c4c57f5f61.png';
   static const String allPosts = '$baseUrl/r/flutterdev/new.json';
+  static const String host = 'example.com';
 }

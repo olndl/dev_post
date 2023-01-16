@@ -18,7 +18,9 @@ class HomePage extends ConsumerWidget {
       backgroundColor: ColorsGuide.backgroundColor,
       body: ref.watch(_postsListProvider).maybeWhen(
             success: (content) {
-              return HomePageBody(post: content);
+              return HomePageBody(
+                postList: content,
+              );
             },
             error: (e) => ErrorScreen(
               message: '$e',

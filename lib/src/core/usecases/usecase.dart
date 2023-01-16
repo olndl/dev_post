@@ -1,5 +1,5 @@
 import 'package:dev_post/src/features/domain/models/post.dart';
 
 abstract class UseCase {
-  Future<Post> execute();
+  Future<List<Child>> execute();
 }

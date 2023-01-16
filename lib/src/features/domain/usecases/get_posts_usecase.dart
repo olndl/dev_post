@@ -8,7 +8,7 @@ class GetPostsUseCaseImpl implements UseCase {
   GetPostsUseCaseImpl(this._postRepository);
 
   @override
-  Future<Post> execute() {
+  Future<List<Child>> execute() {
     return _postRepository.getPosts();
   }
 }

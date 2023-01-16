@@ -5,13 +5,13 @@ import 'package:dev_post/src/features/domain/models/post.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 final postListStateNotifierProvider =
-    StateNotifierProvider.autoDispose<PostListModel, State<Post>>((ref) {
+    StateNotifierProvider.autoDispose<PostListModel, State<List<Child>>>((ref) {
   return PostListModel(
     ref.watch(getPostsUseCaseProvider),
   );
 });
 
-class PostListModel extends StateNotifier<State<Post>> {
+class PostListModel extends StateNotifier<State<List<Child>>> {
   final UseCase _useCase;
 
   PostListModel(

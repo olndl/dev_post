@@ -9,8 +9,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 class HomePageBody extends ConsumerWidget {
-  final Post post;
-  const HomePageBody({Key? key, required this.post}) : super(key: key);
+  final List<Child> postList;
+  const HomePageBody({Key? key, required this.postList}) : super(key: key);
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -32,7 +32,7 @@ class HomePageBody extends ConsumerWidget {
             padding: EdgeInsets.only(top: 1.percentOfHeight),
           ),
           PostList(
-            post: post,
+            postList: postList,
           )
         ],
       ),
