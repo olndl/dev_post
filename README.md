@@ -13,7 +13,7 @@ api link ->  [https://www.reddit.com/r/flutterdev/new.json](https://www.reddit.c
 
 
 ## Video
-<img src="https://github.com/olndl/dev_post/blob/dev/screenshots/screen.gif"/>
+<img src="https://github.com/olndl/dev_post/blob/dev/screenshots/screen.gif" width="300"/>
 
 ## Screenshots
 <img src="https://github.com/olndl/dev_post/blob/dev/screenshots/first_screen.png" width="350"/>
