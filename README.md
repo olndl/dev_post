@@ -11,13 +11,13 @@ api link ->  [https://www.reddit.com/r/flutterdev/new.json](https://www.reddit.c
 - [x] Organized saving data to disk using a SQFLite
 - [X] Offline-first mood
 
+
+## Video
+<img src="https://github.com/olndl/dev_post/blob/dev/screenshots/screen.gif"/>
+
 ## Screenshots
 <img src="https://github.com/olndl/dev_post/blob/dev/screenshots/first_screen.png" width="350"/>
 <img src="https://github.com/olndl/dev_post/blob/dev/screenshots/second_screen.png" width="350/>
-
-
-## Video
-<img src="https://github.com/olndl/dev_post/blob/main/screenshots/screen.gif"/>
 
 ## Packages Used
 
